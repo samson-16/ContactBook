@@ -175,19 +175,31 @@ int main() {
 	//Greetings a
 	cout<<"\t\t\tWELCOME TO CONTACTBOOK\n";
 	 cout<<"\t***************************************************\n";
-	cout<<"\t\t$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$/n";
+	cout<<"\t\t$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n";
 	// asking user to have a password
 	cout<<"\t\twould like to put password:\n";
 	
 	cout<<" To control unauthorized access, keeping your sensitive personal information safe.\n";
-	cout<<"\t\t[1] to continue:\n \t\t[0] to cancel and continue without a password:\n";
+	cout<<"\t\t[1] To continue:\n \t\t[0] To cancel and continue without a password:\n";
 	int choice1;
 	cin>>choice1;
 	if(choice1==1){
-	
+	one:
 		 cout << "Enter password:";
 cin>>PASSWORD;
-cout<<"created succesfully\n";
+int pass;
+cout<<"ARE U SURE YOU WANT TO CREATE THIS AS YOUR PASSWORD:\n";
+cout<<"[1] SURE\n";
+cout<<"[0] CHANGE\n";
+cin>>pass;
+if(pass==1){
+	cout<<"created succesfully\n";
+}
+else if(pass==0){
+	cout<<"creat new password...\n";
+	goto one;
+}
+
 cout<<"\t\t************************************************************\n";
 cout<<"\t\t==========================================================\n";
 		string password;
