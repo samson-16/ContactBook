@@ -75,8 +75,10 @@ void displaycontacts() {
    cout << " GROUP: " << contacts[i].group << endl; // Display contact group
  }
 }
-
+// a function below helps a user to find a contact from a dozen of contacts saved 
 void searchcontact() {
+	//check whether if a contact is an empty before searching 
+ 
  if (contacts.empty()) {
  cout << "===!!NO CONTACT FOUND!!===";
  return;
@@ -89,7 +91,8 @@ void searchcontact() {
  bool found = false;
  cout << "===SEARCH RESULT===\n";
  for (size_t i = 0; i < contacts.size(); i++) {
- if (contacts[i].name == name) {
+ // crosscheck if a name searched is the same as names on contact list
+	 if (contacts[i].name == name) {
 
  cout << "NAME: " << contacts[i].name << endl;
  cout << "PHONENUMBER: " << contacts[i].phonenumber << endl;
@@ -102,7 +105,7 @@ void searchcontact() {
  cout << "===NO CONTACT FOUND WITH THE NAME YOU ENTERED===";
  }
 }
-
+// the below function is to erase unwanted or mistaken contact
 void deletecont() {
  if (contacts.empty()) {
  cout << "===!!NO CONTACT FOUND!!===";
