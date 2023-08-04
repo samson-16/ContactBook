@@ -14,7 +14,8 @@ struct mycontact {
 };
 
 vector<mycontact> contacts;
-
+// construct function 
+/* function of add contact */
 void addcontact() {
  mycontact contact;
  cout << "NAME: ";
@@ -38,13 +39,16 @@ void addcontact() {
  cout << "=====CONTACT SAVED SUCCESSFULLY=====\n";
  
 }
-
+// function to display an input contact
 void displaycontacts() {
+	//check whether if a contact is an empty before display 
  if (contacts.empty()) {
    cout << "===!!NO CONTACT FOUND!!===";
    return;
  }
+	
  int sort_option;
+	// a choice how to display an entered contact 
  cout << "Enter sort option:\n"
       << "1. Ascending order\n"
       << "2. Descending order\n"
