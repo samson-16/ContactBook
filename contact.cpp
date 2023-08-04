@@ -28,7 +28,7 @@ void addcontact() {
  getline(cin, contact.email);
  int choice;
  cout<<"add this contact to a group\n";
- cout<<"\t[1] ADD GROUP\n \t[0]to CANCEL\n";
+ cout<<"\t[1] ADD GROUP\n \t[0]TO CANCEL\n";
  cin>>choice;
  if(choice==1){
     cout << "GROUP: ";
