@@ -168,8 +168,9 @@ int main() {
 	cin>>choice1;
 	if(choice1==1){
 	
-	 cout << "Enter password: "<<endl;
-	getline(cin,PASSWORD);
+		 cout << "Enter password:"<<endl;
+cin>>PASSWORD;
+cout<<"created succesfully\n";
 		string password;
 	cout<<"Enter password: ";
 	cin>>password;
