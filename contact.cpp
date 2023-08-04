@@ -16,6 +16,7 @@ struct mycontact {
 vector<mycontact> contacts;
 // construct function 
 /* function of add contact */
+
 void addcontact() {
  mycontact contact;
  cout << "NAME: ";
@@ -27,17 +28,20 @@ void addcontact() {
  getline(cin, contact.email);
  int choice;
  cout<<"add this contact to a group\n";
- cout<<"\t[1]. to add\n \t[0]to cancel\n";
+ cout<<"\t[1] ADD GROUP\n \t[0]to CANCEL\n";
  cin>>choice;
  if(choice==1){
- cout << "GROUP: ";
- getline(cin, contact.group); // Get the contact group
- contacts.push_back(contact);}
+    cout << "GROUP: ";
+    cin.ignore(); 
+    getline(cin, contact.group);
+    contacts.push_back(contact);
+ }
  else if(choice==0){
- 	cout<<"NO group,Canceled\n";
+    contact.group=""; 
+    cout<<"NO group, Canceled\n";
+    contacts.push_back(contact); 
  }
  cout << "=====CONTACT SAVED SUCCESSFULLY=====\n";
- 
 }
 // function to display an input contact
 void displaycontacts() {
@@ -65,15 +69,23 @@ void displaycontacts() {
      return a.name > b.name;
    });
  }
- else
-  cout<<"invalid input\n";
+  else if(sort_option==3){
+  	cout<<"Time saved:"<<endl;
+  }
+ else {
+ 	cout<<"invalid input. \n";
+ 	goto last;
+ }
 
  for (size_t i = 0; i < contacts.size(); i++) {
    cout << i + 1 << ". NAME: " << contacts[i].name << endl;
    cout << " PHONENUMBER: " << contacts[i].phonenumber << endl;
    cout << " EMAIL: " << contacts[i].email << endl;
-   cout << " GROUP: " << contacts[i].group << endl; // Display contact group
+
  }
+ last:
+ 	cout<<"check your input\n";
+ 
 }
 // a function below helps a user to find a contact from a dozen of contacts saved 
 void searchcontact() {
@@ -174,6 +186,8 @@ int main() {
 		 cout << "Enter password:";
 cin>>PASSWORD;
 cout<<"created succesfully\n";
+cout<<"\t\t************************************************************";
+cout<<"\t\t\t\t==========================================================\n";
 		string password;
 	cout<<"Enter password: ";
 	cin>>password;
@@ -192,9 +206,10 @@ cout<<"created succesfully\n";
  cout<<"\t***************************************************\n";
  int use;
  label:
- cout<<"\t\tCLICK\n \t\t[1]. continue using contactbook\n";
+ cout<<"\t\tCLICK\n \t\t[1]continue using contactbook\n";
  cout<<"\t\t[0] to exit\n";
  cin>>use;
+ cout<<"\t\t============================================================\n";
  if(use==1){
   goto first;
  }
@@ -227,6 +242,8 @@ first:
  cout << "How Many contacts you want to add: ";
  cin >> numcontacts;
  for (int i = 0; i < numcontacts; i++) {
+ 	cout<<"\t\t======================================================"<<endl;
+ 	cout<<"CREATE CONTACT "<<i+1<<endl;
  addcontact();
  }
  break;
