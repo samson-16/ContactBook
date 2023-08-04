@@ -27,6 +27,8 @@ void addcontact() {
  cout << "EMAIL: ";
  getline(cin, contact.email);
  int choice;
+	int add;
+	add:
  cout<<"add this contact to a group\n";
  cout<<"\t[1] ADD GROUP\n \t[0]TO CANCEL\n";
  cin>>choice;
@@ -40,6 +42,11 @@ void addcontact() {
     contact.group=""; 
     cout<<"NO group, Canceled\n";
     contacts.push_back(contact); 
+	else{
+		cout<<"\t\tinvliad input...please choose correctly\n";
+		goto add;
+	}
+	 
  }
  cout << "=====CONTACT SAVED SUCCESSFULLY=====\n";
 }
