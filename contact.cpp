@@ -175,6 +175,7 @@ int main() {
 	//Greetings a
 	cout<<"\t\t\tWELCOME TO CONTACTBOOK\n";
 	 cout<<"\t***************************************************\n";
+	cout<<"\t\t$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$/n;
 	// asking user to have a password
 	cout<<"\t\twould like to put password:\n";
 	
@@ -187,8 +188,8 @@ int main() {
 		 cout << "Enter password:";
 cin>>PASSWORD;
 cout<<"created succesfully\n";
-cout<<"\t\t************************************************************";
-cout<<"\t\t\t\t==========================================================\n";
+cout<<"\t\t************************************************************\n";
+cout<<"\t\t==========================================================\n";
 		string password;
 	cout<<"Enter password: ";
 	cin>>password;
