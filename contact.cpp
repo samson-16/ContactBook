@@ -55,10 +55,10 @@ void displaycontacts() {
 	// a choice how to display an entered contact 
 	cout<<"\t\t$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n";
  cout << "Enter sort option:\n"
-      << "1. Descending order\n"
-      << "2. Asending order\n"
-      << "3. Leave in order they were saved\n"
-      << "Option: ";
+      << "1. ASCENDING order\n"
+      << "2. DESCENDING order\n"
+      << "3. Leave in order they were SAVED\n"
+      << "OPTION: ";
  cin >> sort_option;
 
  if (sort_option == 1) {
@@ -175,7 +175,7 @@ int main() {
 	//Greetings a
 	cout<<"\t\t\tWELCOME TO CONTACTBOOK\n";
 	 cout<<"\t***************************************************\n";
-	cout<<"\t\t$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$/n;
+	cout<<"\t\t$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$/n";
 	// asking user to have a password
 	cout<<"\t\twould like to put password:\n";
 	
