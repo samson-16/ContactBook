@@ -314,7 +314,6 @@ The code is a C++ program for a contact management system. It allows the user to
 
 7. The code defines a function called deletecont() that prompts the user to enter a name and deletes the contact with that name from the contacts vector if found.
 
-8. The code defines a function called advancedsearch(), but its implementation is missing.
 
-Overall, the code provides basic functionality for managing contacts. However, there are some improvements that can be made, such as adding input validation and error handling, implementing the missing advancedsearch() function, and organizing the code into separate files and classes for better modularity and maintainability.
+Overall, the code provides basic functionality for managing contacts. However, there are some improvements that can be made, such as adding input validation and error handling and organizing the code into separate files and classes for better modularity and maintainability.
 */
