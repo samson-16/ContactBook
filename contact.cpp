@@ -1,10 +1,11 @@
-
+// c++ code of contact managment system
 #include <iostream>
 #include <string>
 #include <vector>
 #include<algorithm>
 using namespace std;
 string PASSWORD ;
+// declare structure
 struct mycontact {
  string name;
  string phonenumber;
