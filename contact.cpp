@@ -41,13 +41,12 @@ void addcontact() {
  else if(choice==0){
     contact.group=""; 
     cout<<"NO group, Canceled\n";
-    contacts.push_back(contact); 
+    contacts.push_back(contact); }
 	else{
 		cout<<"\t\tinvliad input...please choose correctly\n";
 		goto add;
 	}
 	 
- }
  cout << "=====CONTACT SAVED SUCCESSFULLY=====\n";
 }
 // function to display an input contact
