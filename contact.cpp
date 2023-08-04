@@ -171,7 +171,7 @@ int main() {
 	cin>>choice1;
 	if(choice1==1){
 	
-		 cout << "Enter password:"<<endl;
+		 cout << "Enter password:";
 cin>>PASSWORD;
 cout<<"created succesfully\n";
 		string password;
