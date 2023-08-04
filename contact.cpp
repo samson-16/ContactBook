@@ -14,8 +14,8 @@ struct mycontact {
 };
 
 vector<mycontact> contacts;
-// construct function 
-/* function of add contact */
+// construct function
+// function of add contact
 
 void addcontact() {
  mycontact contact;
@@ -178,7 +178,7 @@ void advancedsearch() {
 }
 
 int main() {
-	//Greetings a
+	//Greetings 
 	cout<<"\t\t\tWELCOME TO CONTACTBOOK\n";
 	 cout<<"\t***************************************************\n";
 	cout<<"\t\t$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n";
@@ -279,7 +279,7 @@ first:
  break;
 
  case 4:
-// function of delete unwanted contact 
+       // function of delete unwanted contact 
 
  deletecont();
  break;
