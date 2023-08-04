@@ -159,9 +159,12 @@ void advancedsearch() {
 }
 
 int main() {
+	//Greetings a
 	cout<<"\t\t\tWELCOME TO CONTACTBOOK\n";
 	 cout<<"\t***************************************************\n";
+	// asking user to have a password
 	cout<<"\t\twould like to put password:\n";
+	
 	cout<<" To control unauthorized access, keeping your sensitive personal information safe.\n";
 	cout<<"\t\t[1] to continue:\n \t\t[0] to cancel and continue without a password:\n";
 	int choice1;
@@ -205,7 +208,7 @@ cout<<"created succesfully\n";
 first:
  for (;;) {
  int ch;
-
+//menu bar
  cout << "\n\t ==== Contact Management System ====";
  cout << "\n\n\n\t\t\tMAIN MENU\n\t\t=====================\n\t\t[1] Add Contact\n\t\t[2] Display all Contacts\n\t\t[3] Search contact\n\t\t[4] Delete Contact\n\t\t[5] Advanced Search\n\t\t[0] Exit\n\t\t=================\n\t\t";
  cout << "Enter the choice: ";
@@ -218,6 +221,7 @@ first:
  exit(1);
 
  case 1:
+	 //function of add a contact
  	int numcontacts;
  cout << "\n\t ==== Contact Management System ====\n";
  cout << "How Many contacts you want to add: ";
@@ -228,18 +232,23 @@ first:
  break;
 
  case 2:
+	 // function of Display contacts
  displaycontacts();
  break;
 
  case 3:
+	 //function ofsearch for a contact 
  searchcontact();
  break;
 
  case 4:
+// function of delete unwanted contact 
+
  deletecont();
  break;
 
  case 5:
+	 //advanced search
  advancedsearch();
  break;
 
