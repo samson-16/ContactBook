@@ -53,9 +53,10 @@ void displaycontacts() {
 	
  int sort_option;
 	// a choice how to display an entered contact 
+	cout<<"\t\t$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n";
  cout << "Enter sort option:\n"
-      << "1. Ascending order\n"
-      << "2. Descending order\n"
+      << "1. Descending order\n"
+      << "2. Asending order\n"
       << "3. Leave in order they were saved\n"
       << "Option: ";
  cin >> sort_option;
