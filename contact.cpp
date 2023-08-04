@@ -297,3 +297,24 @@ first:
  return 0;
  
 }
+/*
+The code is a C++ program for a contact management system. It allows the user to add, display, search, and delete contacts 
+
+1. The code starts by including the necessary libraries and declaring a global variable PASSWORD.
+
+2. The code defines a structure called mycontact, which represents a contact with fields for name, phone number, email, and group.
+
+3. The code declares a vector called contacts to store the contacts.
+
+4. The code defines a function called addcontact() that prompts the user to enter the details of a contact (name, phone number, email, and group) and adds it to the contacts vector.
+
+5. The code defines a function called displaycontacts() that displays all the contacts stored in the contacts vector. It allows the user to choose how to sort the contacts (ascending, descending, or leave in the order they were saved).
+
+6. The code defines a function called searchcontact() that prompts the user to enter a name and searches for contacts with that name in the contacts vector. It displays the matching contacts if found.
+
+7. The code defines a function called deletecont() that prompts the user to enter a name and deletes the contact with that name from the contacts vector if found.
+
+8. The code defines a function called advancedsearch(), but its implementation is missing.
+
+Overall, the code provides basic functionality for managing contacts. However, there are some improvements that can be made, such as adding input validation and error handling, implementing the missing advancedsearch() function, and organizing the code into separate files and classes for better modularity and maintainability.
+*/
