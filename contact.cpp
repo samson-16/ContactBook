@@ -102,7 +102,7 @@ void addcontact() {
     e: cout << "NAME: ";
     cin.ignore();
     getline(cin, contact.name);
-    //check if the entered password exists in contacts
+    //check if the entered Name exists in contacts
     for(const mycontact& existingcontact: contacts){
         if(existingcontact.name==contact.name){
             cout<<"The name already exists. Please enter a different name.\n";
