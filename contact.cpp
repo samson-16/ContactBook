@@ -300,6 +300,7 @@ void editContact() {
     }
 }
 int main() {
+    system("color 3E");
     // Greetings
     cout << "\t\t\tWELCOME TO CONTACTBOOK\n";
     cout << "\t***********\n";
