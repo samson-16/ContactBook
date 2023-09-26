@@ -99,8 +99,15 @@ bool checkPassword() {
 // Function of add a contact
 void addcontact() {
     mycontact contact;
-    cout << "NAME: ";
+    e: cout << "NAME: ";
     cin.ignore();
+    //check if the entered password exists in contacts
+    for(const mycontact& existingcontact: contacts){
+        if(existingcontact.name==contact.name){
+            cout<<"The name already exists. Please enter a different name.\n";
+            goto e;
+        }
+    }
     getline(cin, contact.name);
     cout << "PHONENUMBER: ";
     getline(cin, contact.phonenumber);
