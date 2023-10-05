@@ -345,7 +345,6 @@ int main() {
     // Load contacts from the file when the program starts
     loadContactsFromFile();
 
-    // Rest of the code remains the same with some modifications
 
     for (;;) {
         int ch;
