@@ -30,6 +30,10 @@ void addContact() {
     getline(cin, contact.phonenumber);
     cout << "EMAIL: ";
     getline(cin, contact.email);
+
+
+
+    
     
     // Check if the email address contains the @ symbol
     if (contact.email.find("@") == string::npos) {
